@@ -87,6 +87,13 @@ app.get('/', (req, res) => {
   });
 });
 
+// test api
+app.get('/test', (req, res) => {
+    res.json({ message: 'API is working!' });
+});
+
+// Start server
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
